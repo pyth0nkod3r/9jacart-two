@@ -1,230 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9jaCart - Nigerian Online Marketplace</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <!-- heading bar -->
-        <div class="top-header">
-            <div class="contact-info">
-                <a href="mailto:hello@gmail.com"><i class="far fa-envelope"></i> hello@gmail.com</a>
-                <a href="tel:+1234567890"><i class="fas fa-phone"></i> +123 (456)567890</a>
-            </div>
-            <div class="search-container">
-                <input type="text" placeholder="Search on this website">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="user-actions">
-                <a href="#" class="wishlist"><i class="far fa-heart"></i> Wishlist</a>
-                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a>
-                <div class="language-selector">
-                    <span>EN</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
+      <!-- heading bar -->
+      <div class="top-header">
+        <div class="contact-info">
+          <a href="mailto:hello@gmail.com"
+            ><i class="far fa-envelope"></i> hello@gmail.com</a
+          >
+          <a href="tel:+1234567890"
+            ><i class="fas fa-phone"></i> +123 (456)567890</a
+          >
         </div>
-        <!-- nav bar -->
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="/">9jaCart</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/products">Products</a></li>
-                <li><a href="/vendors">Vendors</a></li>
-                <li><a href="/professionals">Professionals</a></li>
-                <li><a href="/about-us">About us</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/faq">FAQ</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-            <div class="category-search">
-                <select>
-                    <option>All categories</option>
-                </select>
-                <div class="search-box">
-                    <input type="text" placeholder="Search for products, categories...">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </nav>
+        <div class="search-container">
+          <input type="text" placeholder="Search on this website" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+          <a href="#" class="wishlist"><i class="far fa-heart"></i> Wishlist</a>
+          <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+          <div class="language-selector">
+            <span>EN</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <!-- nav bar -->
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="/">9jaCart</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/products">Products</a></li>
+          <li><a href="/vendors">Vendors</a></li>
+          <li><a href="/professionals">Professionals</a></li>
+          <li><a href="/about-us">About us</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="category-search">
+          <select>
+            <option>All categories</option>
+          </select>
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search for products, categories..."
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Don't miss our amazing deals</h1>
-                <p>We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
-                <a href="#" class="shop-now-btn">Shop Now</a>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Don't miss our amazing deals</h1>
+          <p>
+            We have prepared special discounts for you on grocery products.
+            Don't miss these opportunities...
+          </p>
+          <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+      </section>
+      <section class="vendors-section">
+        <h2>Discover our vendors</h2>
+        <div class="vendor-categories">
+          <button class="category-btn active">Vegetables</button>
+          <button class="category-btn">Grains & Cereals</button>
+          <button class="category-btn">Animal Product</button>
+          <button class="category-btn">Processed Products</button>
+          <button class="category-btn">Beverages & Natural Drinks</button>
+          <button class="category-btn">On sale</button>
+        </div>
+        <div class="vendor-carousel">
+          <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="vendor-cards">
+            <div class="vendor-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Charles & Ray Eames"
+              />
+              <h3>Charles & Ray Eames</h3>
             </div>
-        </section>
-        <section class="vendors-section">
-            <h2>Discover our vendors</h2>
-            <div class="vendor-categories">
-                <button class="category-btn active">Vegetables</button>
-                <button class="category-btn">Grains & Cereals</button>
-                <button class="category-btn">Animal Product</button>
-                <button class="category-btn">Processed Products</button>
-                <button class="category-btn">Beverages & Natural Drinks</button>
-                <button class="category-btn">On sale</button>
+            <div class="vendor-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Ligne Roset"
+              />
+              <h3>Ligne Roset</h3>
             </div>
-            <div class="vendor-carousel">
-                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="vendor-cards">
-                    <div class="vendor-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Charles & Ray Eames">
-                        <h3>Charles & Ray Eames</h3>
-                    </div>
-                    <div class="vendor-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Ligne Roset">
-                        <h3>Ligne Roset</h3>
-                    </div>
-                    <div class="vendor-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Fritz Hansen">
-                        <h3>Fritz Hansen</h3>
-                    </div>
+            <div class="vendor-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Fritz Hansen"
+              />
+              <h3>Fritz Hansen</h3>
+            </div>
+          </div>
+          <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="chair-design">
+        <div class="chair-image">
+          <img
+            src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=1974"
+            alt="Modern Orange Chair Design"
+          />
+        </div>
+        <div class="chair-content">
+          <h2>Chair design</h2>
+          <p class="subtitle">Donec sit amet libero eros.</p>
+          <p class="description">
+            Vestibulum nec pharetra nibh. Etiam sit amet lectus vel ipsum
+            placerat laoreet vel ut magna.
+          </p>
+          <a href="#" class="discover-btn">Discover</a>
+        </div>
+      </section>
+      <section class="new-products">
+        <h2>New in our shop</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus
+          interdum lectus. Pellentesque a viverra nisi. Sed mattis, quam vitae
+          faucibus mattis, ipsum sapien felis ut nisi.
+        </p>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1577140917170-285929fb55b7"
+              alt="Black Modern Chair"
+            />
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+            <div class="product-info">
+              <h3>Product name</h3>
+              <p class="size">Size:</p>
+              <p class="other-info">Other info</p>
+              <div class="price-row">
+                <span class="price">850,00 €</span>
+                <button class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1503602642458-232111445657"
+              alt="Pink Folding Chair"
+            />
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+            <div class="product-info">
+              <h3>Product name</h3>
+              <p class="size">Size:</p>
+              <p class="other-info">Other info</p>
+              <div class="price-row">
+                <span class="price">122,50 €</span>
+                <button class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1592078615290-033ee584e267"
+              alt="Black Classic Chair"
+            />
+            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+            <div class="product-info">
+              <h3>Product name</h3>
+              <p class="size">Size:</p>
+              <p class="other-info">Other info</p>
+              <div class="price-row">
+                <span class="price">152 €</span>
+                <button class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <a href="#" class="shop-btn">Shop</a>
+        </div>
+      </section>
+      <section class="table-design">
+        <div class="table-content">
+          <h2>Table design</h2>
+          <p class="subtitle">Donec sit amet libero eros.</p>
+          <p class="description">
+            Vestibulum nec pharetra nibh. Etiam sit amet lectus vel ipsum
+            placerat laoreet vel ut magna.
+          </p>
+          <a href="#" class="discover-btn">Discover</a>
+        </div>
+        <div class="table-image">
+          <img
+            src="assets/img/homepage/wooden-table.jpeg"
+            alt="Modern Wooden Nesting Tables"
+          />
+        </div>
+      </section>
+
+      <section class="designer-tables">
+        <h2>Designer tables</h2>
+        <div class="table-categories">
+          <button class="category-btn active">Coffee table</button>
+          <button class="category-btn">Dining</button>
+          <button class="category-btn">Nightstand</button>
+          <button class="category-btn">Outdoor</button>
+        </div>
+        <div class="table-carousel">
+          <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="table-cards">
+            <div class="table-card">
+              <img
+                src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc"
+                alt="Modern Coffee Table"
+              />
+              <button class="favorite-btn"><i class="far fa-heart"></i></button>
+              <div class="table-info">
+                <h3>Product name</h3>
+                <p class="size">Size:</p>
+                <p class="other-info">Other info</p>
+                <div class="price-row">
+                  <span class="price">8,19 €</span>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
                 </div>
-                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+              </div>
             </div>
-        </section>
-        <section class="chair-design">
-            <div class="chair-image">
-                <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=1974" alt="Modern Orange Chair Design">
-            </div>
-            <div class="chair-content">
-                <h2>Chair design</h2>
-                <p class="subtitle">Donec sit amet libero eros.</p>
-                <p class="description">Vestibulum nec pharetra nibh. Etiam sit amet lectus vel ipsum placerat laoreet vel ut magna.</p>
-                <a href="#" class="discover-btn">Discover</a>
-            </div>
-        </section>
-        <section class="new-products">
-            <h2>New in our shop</h2>
-            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus interdum lectus. Pellentesque a viverra nisi. Sed mattis, quam vitae faucibus mattis, ipsum sapien felis ut nisi.</p>
-            
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7" alt="Black Modern Chair">
-                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                    <div class="product-info">
-                        <h3>Product name</h3>
-                        <p class="size">Size:</p>
-                        <p class="other-info">Other info</p>
-                        <div class="price-row">
-                            <span class="price">850,00 €</span>
-                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </div>
+
+            <div class="table-card">
+              <img
+                src="https://images.unsplash.com/photo-1533090368676-1fd25485db88"
+                alt="Wooden Dining Table"
+              />
+              <button class="favorite-btn"><i class="far fa-heart"></i></button>
+              <div class="table-info">
+                <h3>Product name</h3>
+                <p class="size">Size:</p>
+                <p class="other-info">Other info</p>
+                <div class="price-row">
+                  <span class="price">8,19 €</span>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
                 </div>
+              </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Pink Folding Chair">
-                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                    <div class="product-info">
-                        <h3>Product name</h3>
-                        <p class="size">Size:</p>
-                        <p class="other-info">Other info</p>
-                        <div class="price-row">
-                            <span class="price">122,50 €</span>
-                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </div>
+            <div class="table-card">
+              <img
+                src="https://images.unsplash.com/photo-1592078615290-033ee584e267"
+                alt="Modern Side Table"
+              />
+              <button class="favorite-btn"><i class="far fa-heart"></i></button>
+              <div class="table-info">
+                <h3>Product name</h3>
+                <p class="size">Size:</p>
+                <p class="other-info">Other info</p>
+                <div class="price-row">
+                  <span class="price">8,19 €</span>
+                  <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="section-footer">
+          <a href="#" class="shop-btn">See all the products</a>
+        </div>
+      </section>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Black Classic Chair">
-                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                    <div class="product-info">
-                        <h3>Product name</h3>
-                        <p class="size">Size:</p>
-                        <p class="other-info">Other info</p>
-                        <div class="price-row">
-                            <span class="price">152 €</span>
-                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </div>
-                </div>
+      <section class="product-showcase">
+        <div class="showcase-content">
+          <h2>Showcase your product with a slider</h2>
+          <p class="subtitle">That's less boring</p>
+          <a href="#" class="cta-btn">Call to action</a>
+        </div>
+        <div class="showcase-image">
+          <img
+            src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845"
+            alt="Modern Black Desk Lamp"
+          />
+        </div>
+        <div class="slider-navigation">
+          <div class="slider-item active">
+            <div class="slider-text">
+              <h3>Lamps</h3>
+              <p>Quisque eu posuere sem, vitae sagittis.</p>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-text">
+              <h3>Slide 2</h3>
+              <p>
+                Ut vitae erat eleifend, rutrum felis et, ullamcorper lorem. In
+                hac habitasse.
+              </p>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-text">
+              <h3>Slide 3</h3>
+              <p>
+                Suspendisse sodales risus a tellus sagittis, maximus ornare eros
+                fringilla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>What clients say about us</h2>
+        <div class="testimonial-container">
+          <div class="trustpilot-summary">
+            <div class="rating-summary">
+              <h3>Excellent</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>Based on 56 reviews</p>
+              <img
+                src="https://cdn.trustpilot.net/brand-assets/1.1.0/logo-black.svg"
+                alt="Trustpilot"
+                class="trustpilot-logo"
+              />
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="review-date">2 days ago</span>
+              </div>
+              <h3>Fast delivery !!</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
+                sem ultrices, tempor arcu sed.
+              </p>
+              <div class="reviewer">Alexander B.</div>
             </div>
 
-            <div class="section-footer">
-                <a href="#" class="shop-btn">Shop</a>
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="review-date">2 days ago</span>
+              </div>
+              <h3>The sofa is stunning</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
+                sem ultrices, tempor arcu sed.
+              </p>
+              <div class="reviewer">Frederik L.</div>
             </div>
-        </section>
-        <section class="table-design">
-            <div class="table-content">
-                <h2>Table design</h2>
-                <p class="subtitle">Donec sit amet libero eros.</p>
-                <p class="description">Vestibulum nec pharetra nibh. Etiam sit amet lectus vel ipsum placerat laoreet vel ut magna.</p>
-                <a href="#" class="discover-btn">Discover</a>
-            </div>
-            <div class="table-image">
-                <img src="assets/img/homepage/wooden-table.jpeg" alt="Modern Wooden Nesting Tables">
-            </div>
-        </section>
 
-        <section class="designer-tables">
-            <h2>Designer tables</h2>
-            <div class="table-categories">
-                <button class="category-btn active">Coffee table</button>
-                <button class="category-btn">Dining</button>
-                <button class="category-btn">Nightstand</button>
-                <button class="category-btn">Outdoor</button>
+            <div class="testimonial-card">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="review-date">2 days ago</span>
+              </div>
+              <h3>Best furniture shop</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
+                sem ultrices, tempor arcu sed.
+              </p>
+              <div class="reviewer">Victor F.</div>
             </div>
-            <div class="table-carousel">
-                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="table-cards">
-                    <div class="table-card">
-                        <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc" alt="Modern Coffee Table">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                        <div class="table-info">
-                            <h3>Product name</h3>
-                            <p class="size">Size:</p>
-                            <p class="other-info">Other info</p>
-                            <div class="price-row">
-                                <span class="price">8,19 €</span>
-                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="section-footer">
+          <a href="#" class="reviews-btn">See all the reviews</a>
+        </div>
+      </section>
 
-                    <div class="table-card">
-                        <img src="https://images.unsplash.com/photo-1533090368676-1fd25485db88" alt="Wooden Dining Table">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                        <div class="table-info">
-                            <h3>Product name</h3>
-                            <p class="size">Size:</p>
-                            <p class="other-info">Other info</p>
-                            <div class="price-row">
-                                <span class="price">8,19 €</span>
-                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
+      <section class="benefits">
+        <h2>Our benefits !</h2>
+        <div class="benefits-container">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Free and fast delivery</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              purus gravida.
+            </p>
+          </div>
 
-                    <div class="table-card">
-                        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Modern Side Table">
-                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
-                        <div class="table-info">
-                            <h3>Product name</h3>
-                            <p class="size">Size:</p>
-                            <p class="other-info">Other info</p>
-                            <div class="price-row">
-                                <span class="price">8,19 €</span>
-                                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-check-circle"></i>
             </div>
-            <div class="section-footer">
-                <a href="#" class="shop-btn">See all the products</a>
+            <h3>Quality guaranteed</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              purus gravida.
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
             </div>
-        </section>
+            <h3>Manufacturer warranty</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              purus gravida.
+            </p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Original designs</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              purus gravida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="last-articles">
+        <h2>Last articles</h2>
+        <div class="articles-grid">
+          <article class="article-card">
+            <div class="article-image">
+              <img
+                src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1965&auto=format&fit=crop"
+                alt="Modern Restaurant Interior"
+              />
+            </div>
+            <div class="article-meta">
+              <div class="author">
+                <i class="far fa-user"></i>
+                John Doe
+              </div>
+              <div class="date">
+                <i class="far fa-calendar"></i>
+                21 Sep, 2020
+              </div>
+            </div>
+            <h3>Article title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum feugiat lacus...
+            </p>
+            <a href="#" class="read-more">Read the article</a>
+          </article>
+
+          <article class="article-card">
+            <div class="article-image">
+              <img
+                src="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?q=80&w=2054&auto=format&fit=crop"
+                alt="Wooden Bar Stools"
+              />
+            </div>
+            <div class="article-meta">
+              <div class="author">
+                <i class="far fa-user"></i>
+                John Doe
+              </div>
+              <div class="date">
+                <i class="far fa-calendar"></i>
+                21 Sep, 2020
+              </div>
+            </div>
+            <h3>Article title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum feugiat lacus...
+            </p>
+            <a href="#" class="read-more">Read the article</a>
+          </article>
+
+          <article class="article-card">
+            <div class="article-image">
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1916&auto=format&fit=crop"
+                alt="Modern Chair Design"
+              />
+            </div>
+            <div class="article-meta">
+              <div class="author">
+                <i class="far fa-user"></i>
+                John Doe
+              </div>
+              <div class="date">
+                <i class="far fa-calendar"></i>
+                21 Sep, 2020
+              </div>
+            </div>
+            <h3>Article title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum feugiat lacus...
+            </p>
+            <a href="#" class="read-more">Read the article</a>
+          </article>
+        </div>
+        <div class="section-footer">
+          <a href="#" class="articles-btn">See our articles</a>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-content">
+          <h2>
+            Subscribe to our newsletter and get -5 % off of your next purchase !
+          </h2>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Insert your e-mail address"
+              required
+            />
+            <button type="submit">Yes, I want -5%</button>
+          </form>
+        </div>
+        <div class="newsletter-image">
+          <img
+            src="https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?q=80&w=2074&auto=format&fit=crop"
+            alt="Vintage Typewriter"
+          />
+        </div>
+      </section>
     </main>
-    <script src="assets/js/main.js"></script>
-</body> 
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
