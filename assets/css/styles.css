@@ -1275,3 +1275,422 @@ i.fas.fa-shopping-cart {
     height: 300px;
   }
 }
+
+/* Contact Section */
+.contact {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-info p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.contact-info a:hover {
+  color: #3c4f2c;
+}
+
+.quick-links {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.quick-links a {
+  color: #333;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.quick-links a:hover {
+  color: #3c4f2c;
+}
+
+.form-intro {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.required-notice {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.radio-group .radio-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  margin-top: 30px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.checkbox-label span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e76f51;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .radio-group .radio-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2f4419;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: normal;
+  display: block;
+}
+
+.company-info {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.company-info p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.company-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.subscribe-form button {
+  background-color: #e4a853;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Right column content */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-methods p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.payment-icons img {
+  height: 20px;
+  width: auto;
+  background: white;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.copyright {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-col h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 40px;
+  }
+
+  .footer-sections {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subscribe-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+}

@@ -574,7 +574,204 @@
           />
         </div>
       </section>
+
+      <section class="contact">
+        <h2>Contact us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Do you have any questions ?</h3>
+            <p>See our <a href="/faq">FAQ</a> page to get a quick answer</p>
+            <ul class="quick-links">
+              <li><a href="#">How to return an item ?</a></li>
+              <li><a href="#">How can I verify the status of my order?</a></li>
+            </ul>
+            <p class="form-intro">Or fill the contact form below :</p>
+          </div>
+
+          <form class="contact-form">
+            <p class="required-notice">* Mandatory informations</p>
+
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lastname">Last name *</label>
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="object">Object *</label>
+              <select id="object" name="object" required>
+                <option value="">Informations about an item</option>
+                <option value="order">Order status</option>
+                <option value="return">Return request</option>
+                <option value="other">Other inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group radio-group">
+              <label>Options *</label>
+              <div class="radio-options">
+                <label class="radio-label">
+                  <input type="radio" name="option" value="option1" />
+                  <span>Option</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="option" value="option2" />
+                  <span>Option</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="option" value="option3" />
+                  <span>Option</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="option" value="option4" />
+                  <span>Option</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+              <span class="char-count">0/240</span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" required />
+                <span
+                  >I read the terms & conditions and the Privacy policy</span
+                >
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-sections">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">INNA Design</a>
+          <div class="company-info">
+            <p>Company</p>
+            <p>Address line 1</p>
+            <p>Address line 2</p>
+            <a href="mailto:hello@company.com">hello@company.com</a>
+          </div>
+          <div class="footer-bottom">
+            <div class="social-links">
+              <p>Follow us :</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="payment-methods">
+              <p>Pay with :</p>
+              <div class="payment-icons">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196565.png"
+                  alt="PayPal"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196578.png"
+                  alt="Google Pay"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196561.png"
+                  alt="Mastercard"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196581.png"
+                  alt="Visa"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196539.png"
+                  alt="American Express"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196543.png"
+                  alt="Maestro"
+                />
+              </div>
+            </div>
+
+            <div class="copyright">
+              <p>© Company - All rights reserved</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <p>Subscribe to our newsletter</p>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="footer-nav">
+            <div class="footer-col">
+              <h3>Buy</h3>
+              <ul>
+                <li><a href="#">All the products</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Sit</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Customer service</h3>
+              <ul>
+                <li><a href="#">Delivery and returns</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Account</h3>
+              <ul>
+                <li><a href="#">Purchase history</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Legal mentions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
