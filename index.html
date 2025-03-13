@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9jaCart - Nigerian Online Marketplace</title>
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -12,53 +12,80 @@
   </head>
   <body>
     <header>
-      <!-- heading bar -->
+      <!-- Top header -->
       <div class="top-header">
-        <div class="contact-info">
-          <a href="mailto:hello@gmail.com"
-            ><i class="far fa-envelope"></i> hello@gmail.com</a
-          >
-          <a href="tel:+1234567890"
-            ><i class="fas fa-phone"></i> +123 (456)567890</a
-          >
-        </div>
-        <div class="search-container">
-          <input type="text" placeholder="Search on this website" />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="user-actions">
-          <a href="#" class="wishlist"><i class="far fa-heart"></i> Wishlist</a>
-          <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a>
-          <div class="language-selector">
-            <span>EN</span>
-            <i class="fas fa-chevron-down"></i>
+        <div class="container">
+          <div class="contact-info">
+            <a href="mailto:hello@email.com">
+              <i class="far fa-envelope"></i>
+              hello@email.com
+            </a>
+            <a href="tel:+123(1234)67890">
+              <i class="fas fa-phone"></i>
+              +123 (1234)67890
+            </a>
+          </div>
+          <div class="top-right">
+            <div class="search-container">
+              <input type="text" placeholder="Search on this website" />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+              <a href="#" class="wishlist">
+                <i class="far fa-heart"></i>
+                <span>Wishlist</span>
+              </a>
+              <a href="#" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+              </a>
+              <div class="language-selector">
+                <span>EN</span>
+                <i class="fas fa-chevron-down"></i>
+                <ul class="language-dropdown">
+                  <li><a href="#" data-lang="en">English</a></li>
+                  <li><a href="#" data-lang="fr">French</a></li>
+                  <li><a href="#" data-lang="es">Spanish</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- nav bar -->
+
+      <!-- Main navigation -->
       <nav class="main-nav">
-        <div class="logo">
-          <a href="/">9jaCart</a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="/products">Products</a></li>
-          <li><a href="/vendors">Vendors</a></li>
-          <li><a href="/professionals">Professionals</a></li>
-          <li><a href="/about-us">About us</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <div class="category-search">
-          <select>
-            <option>All categories</option>
-          </select>
-          <div class="search-box">
-            <input
-              type="text"
-              placeholder="Search for products, categories..."
-            />
-            <button type="submit"><i class="fas fa-search"></i></button>
+        <div class="container">
+          <div class="logo">
+            <a href="/">
+              <!-- <img src="assets/img/logo.png" alt="9jaCart" class="logo-img" /> -->
+              9jaCart
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="/products">Products</a></li>
+            <li><a href="/vendors">Vendors</a></li>
+            <li><a href="/professionals">Professionals</a></li>
+            <li><a href="/about-us">About us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <div class="search-bar">
+            <div class="category-select">
+              <select>
+                <option value="">All categories</option>
+              </select>
+            </div>
+            <div class="search-input">
+              <input
+                type="text"
+                placeholder="Search for products, categories..."
+              />
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
